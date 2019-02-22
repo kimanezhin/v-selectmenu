@@ -500,9 +500,17 @@
             computed: {
                 btnText: function () {
                     var A = this;
-                    return this.selected.length ? this.selected.concat().map(function (e) {
-                        return e[A.showField]
-                    }).join(",") : this.i18n.advance_default
+                    // return this.selected.length ? this.selected.concat().map(function (e) {
+                    //     return e[A.showField]
+                    // }).join(",") : this.i18n.advance_default
+
+                    if(this.selected.length!=0){
+                        let tmp = this.selected.concat().map((e) => { e[A.showField] }).join(",")
+                        if(tmp.length >= 400)
+                            tmp.split('').slice(0,400).join('')
+                            tmp +="..."
+                            return tmp;
+                    }else return this.i18n.advance_default
                 }
             },
             watch: {
