@@ -507,11 +507,10 @@
                     if(this.selected.length){
                        let tmp = this.selected.concat().map(function (e) {
                         return e[A.showField]
-                    }).join(",") 
-                    console.log(tmp.length + "a")
-                        if(tmp.length >= 80)
+                    }).join(",\n")                
+                        if(tmp.length >= 50)
                            {
-                            tmp = tmp.split('').slice(0,80).join('')
+                            tmp = tmp.split('').slice(0,50).join('')
                             tmp +="....."
                             }
                             return tmp;
