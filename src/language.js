@@ -16,7 +16,7 @@ const languages = {
         close_btn: 'Close Menu (Esc key)',
         not_found: 'not found',
         max_selected: 'You can only select up to max_selected_limit items',
-        advance_default: 'Select an option',
+        advance_default: 'Select tags',
         regular_group: 'Menus'
     },
     // Español
