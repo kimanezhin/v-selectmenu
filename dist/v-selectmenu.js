@@ -508,6 +508,7 @@
                        let tmp = this.selected.concat().map(function (e) {
                         return e[A.showField]
                     }).join(",") 
+                    console.log(tmp.length + "a")
                         if(tmp.length >= 400)
                            {
                             tmp.split('').slice(0,400).join('')
