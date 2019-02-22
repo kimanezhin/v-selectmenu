@@ -509,10 +509,10 @@
                         return e[A.showField]
                     }).join(",") 
                     console.log(tmp.length + "a")
-                        if(tmp.length >= 400)
+                        if(tmp.length >= 80)
                            {
-                            tmp.split('').slice(0,400).join('')
-                            tmp +="..."
+                            tmp = tmp.split('').slice(0,80).join('')
+                            tmp +="....."
                             }
                             return tmp;
                     }else return this.i18n.advance_default
