@@ -437,6 +437,7 @@
                 let str = '', that = this;
                 if(this.selected.length){
                     str = this.selected.concat().map(val=>val[that.showField]).join(',');
+                    console.log(str.length + "b")
                 }else str = this.i18n.advance_default;
                 return str;
             }
